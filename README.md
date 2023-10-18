@@ -3,8 +3,6 @@
 ```bash
 #clone code to local directory
 git clone https://github.com/liynx45/tpl-porto-tailwind
-#start with node js
-npm init -y
 #instal node modules
 npm i
 ```
