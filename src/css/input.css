@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.nav-hover{
+    @apply hover:bg-sky-400 hover:text-white rounded-full transition-colors
+}
+
+.animate-spin {
+    animation: spin 20s linear infinite;
+}
+
+.skill-animation {
+    @apply transition-all
+}
+
+.stroke-text {
+    @apply text-transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #38bdf8;
+}
+
+.nav-line {
+    @apply w-[30px] h-[2px] block my-2 bg-gray-900;
+}
+
+.navham-active span:nth-child(1) {
+    @apply -rotate-45;
+}
+.navham-active span:nth-child(2){
+    @apply scale-0;
+}
+.navham-active span:nth-child(3) {
+    @apply rotate-45;
+}
+.extend-active{
+    @apply block;
+}
+.active-navbar{
+    @apply backdrop-blur-md shadow;
+}
+
+.icon-media {
+    @apply w-6 fill-slate-400;
+}
+
+.icon-hover {
+    @apply translate-y-3 fill-sky-500 bg-red-700 scale-125
+}
